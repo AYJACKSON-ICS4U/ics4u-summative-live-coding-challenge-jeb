@@ -1,0 +1,9 @@
+Slide 6: this is the setup function which “slide”, the one different thing you might see is WEBGL, this line of code sets the center to (0,0), which is why we have a translate line later in the code.
+In this function we are also storing values to the previously declared variables 
+
+Slide 7: next is the draw function, here we do things like set the background colour and rotate the cube which is reciprocated by every cube rotating the whole wave, 
+
+Slide 8: still in the draw function we now make a nested for loop which is a for loop inside a for loop. first thing in the loops is push(); which is apart of push(); pop(); this is used when drawing a shape like the cubes for the wave it applies transformations (like rotate) only to shapes drawn in between the push pop lines.
+d’s value is calculated using the distance equation (x1,y1x2,y2,). Offsets value is a mapped value of distance (did in last line), the map equation is (map(num, low1, high1, low2, high2)). a’s value is the previously declared angle (0) with the offset value we just calculated added to it. In the final line we use the map function again this time for h, we map the sine of  a (which from the last line is angle + offset), then floor the value (ben)
+
+Slide 9: Since its made in the loops multiple boxes will be drawn and they will form the cube wave. This gives each cube motion (makes it look like a wave), you can comment out this line to see what I mean.
